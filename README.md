@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kisan Dost — Farmer's Friend
 
 A terminal AI agronomy agent for Pakistani farmers, built with the
@@ -122,3 +123,6 @@ have to repeat them every message. Type `exit` to quit.
 - Written for Python 3.9+.
 - Keep your real `.env` out of git (a `.gitignore` entry for `.env` and
   `kisan_dost.db` is recommended before pushing to GitHub).
+=======
+# Kisan-Dost
+>>>>>>> 268c9861f704de12d18cbc89ef261f6d37fcce75
