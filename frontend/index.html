@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ur-PK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisan Dost — Aapka Zaraat Ka Dost</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <aside class="side side--left">
+      <div class="side__brand">
+        <svg class="logo-mark logo-mark--side" viewBox="0 0 48 48" width="44" height="44" aria-hidden="true" focusable="false">
+          <g class="logo-mark__rays">
+            <line x1="38" y1="2" x2="38" y2="4.5"/>
+            <line x1="45" y1="9" x2="42.5" y2="9"/>
+            <line x1="43" y1="4" x2="41" y2="6"/>
+            <line x1="43" y1="14" x2="41" y2="12"/>
+            <line x1="33" y1="4" x2="35" y2="6"/>
+            <line x1="33" y1="14" x2="35" y2="12"/>
+          </g>
+          <circle class="logo-mark__core" cx="38" cy="9" r="4.5"/>
+          <path class="logo-mark__horizon" d="M2,40 Q24,37 46,40"/>
+          <g class="logo-mark__wheat">
+            <path d="M30,20 L30,10"/>
+            <path d="M30,15 C33,14 34,12 33,9"/>
+            <path d="M30,15 C27,14 26,12 27,9"/>
+          </g>
+          <g class="logo-mark__tractor">
+            <path d="M6,38 L6,27 L14,27 L14,20 L20,20 L20,27 L27,27 L27,32 L38,32 L38,37"/>
+            <line x1="14" y1="20" x2="14" y2="15"/>
+            <circle class="logo-mark__wheel" cx="13" cy="39" r="6.5"/>
+            <circle class="logo-mark__wheel logo-mark__wheel--front" cx="35" cy="40" r="4.5"/>
+          </g>
+        </svg>
+        <span>Kisan Dost</span>
+      </div>
+
+      <nav class="side__nav">
+        <button type="button" class="side__nav-item is-active" data-prompt="">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M4 6H20M4 12H20M4 18H14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Chat
+        </button>
+        <button type="button" class="side__nav-item" data-prompt="Mera crop ke liye fertilizer plan chahiye, kitni urea aur DAP lagegi?">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none"><path d="M12 21V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 11C12 11 6 10.5 6 5C11.5 5 12 11 12 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 14C12 14 18 13.5 18 8C12.5 8 12 14 12 14Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Fertilizer
+        </button>
+        <button type="button" class="side__nav-item" data-prompt="Aaj ka mandi rate kya hai mere crop ka?">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none"><path d="M4 9L5 4H19L20 9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 9H20V11C20 11.5 19.5 12 19 12C18 12 18 11 17 11C16 11 16 12 15 12C14 12 14 11 13 11C12 11 12 12 11 12C10 12 10 11 9 11C8 11 8 12 7 12C6 12 6 11 5 11C4.5 11 4 11.5 4 11V9Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 12V19H18V12" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 19V15H14V19" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Mandi Rate
+        </button>
+        <button type="button" class="side__nav-item" data-prompt="Meri fasal mein keeda lag gaya hai, ilaj batayein">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none"><circle cx="12" cy="13" r="5" stroke="currentColor" stroke-width="1.6"/><path d="M12 8V5M7 13H3M21 13H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Pest Ilaj
+        </button>
+        <button type="button" class="side__nav-item" data-prompt="Mera profit estimate nikal dein is season ke liye">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="none"><path d="M4 16L9.5 10.5L13 14L20 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.5 6H20V11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20H20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Profit
+        </button>
+        <button type="button" class="side__nav-item" data-prompt="Sarkari scheme ya subsidy ke baare mein batayein jo mujh pe apply hoti hai">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><rect x="4" y="5" width="16" height="14" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 9H16M8 13H16M8 17H12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Govt Scheme
+        </button>
+      </nav>
+
+      <div class="side__tip">
+        <span class="side__tip-label">Aaj ka mashwara</span>
+        <p id="tipOfDay">Fasal ko subah jald ya shaam dhalay paani dein — dopeher ki dhoop mein paani zyada bhaap ban jata hai.</p>
+      </div>
+    </aside>
+
+    <div class="app">
+
+      <header class="header">
+        <svg class="header__horizon header__horizon--back" viewBox="0 0 640 40" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 40 L0 30 L20 24 L40 31 L60 21 L80 29 L100 20 L120 28 L140 22 L160 30 L180 19 L200 27 L220 23 L240 30 L260 20 L280 28 L300 22 L320 29 L340 19 L360 27 L380 23 L400 30 L420 20 L440 28 L460 22 L480 30 L500 19 L520 27 L540 23 L560 30 L580 20 L600 28 L620 22 L640 29 L640 40 Z" fill="var(--sky-mid)" opacity="0.55"/>
+        </svg>
+        <svg class="header__horizon" viewBox="0 0 640 40" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 40 L0 22 L18 26 L34 14 L50 24 L66 18 L82 27 L98 16 L114 25 L130 20 L146 28 L162 15 L178 24 L194 19 L210 26 L226 17 L242 25 L258 21 L274 27 L290 16 L306 24 L322 19 L338 26 L354 15 L370 24 L386 20 L402 27 L418 17 L434 25 L450 21 L466 27 L482 16 L498 24 L514 19 L530 26 L546 15 L562 24 L578 20 L594 27 L610 18 L626 25 L640 22 L640 40 Z" fill="var(--paper)"/>
+        </svg>
+        <div class="header__row">
+          <svg class="logo-mark logo-mark--header" viewBox="0 0 48 48" width="104" height="104" aria-hidden="true" focusable="false">
+            <circle class="logo-mark__badge" cx="24" cy="24" r="23"/>
+            <g class="logo-mark__rays">
+              <line x1="38" y1="2" x2="38" y2="4.5"/>
+              <line x1="45" y1="9" x2="42.5" y2="9"/>
+              <line x1="43" y1="4" x2="41" y2="6"/>
+              <line x1="43" y1="14" x2="41" y2="12"/>
+              <line x1="33" y1="4" x2="35" y2="6"/>
+              <line x1="33" y1="14" x2="35" y2="12"/>
+            </g>
+            <circle class="logo-mark__core" cx="38" cy="9" r="4.5"/>
+            <path class="logo-mark__horizon" d="M2,40 Q24,37 46,40"/>
+            <g class="logo-mark__wheat">
+              <path d="M30,20 L30,10"/>
+              <path d="M30,15 C33,14 34,12 33,9"/>
+              <path d="M30,15 C27,14 26,12 27,9"/>
+            </g>
+            <g class="logo-mark__tractor">
+              <path d="M6,38 L6,27 L14,27 L14,20 L20,20 L20,27 L27,27 L27,32 L38,32 L38,37"/>
+              <line x1="14" y1="20" x2="14" y2="15"/>
+              <circle class="logo-mark__wheel" cx="13" cy="39" r="6.5"/>
+              <circle class="logo-mark__wheel logo-mark__wheel--front" cx="35" cy="40" r="4.5"/>
+            </g>
+          </svg>
+          <div class="header__text">
+            <h1>Kisan Dost</h1>
+            <p>Aapka zaraat ka saathi</p>
+          </div>
+          <button class="header__profile-btn" id="profileToggle" type="button" aria-label="Profile kholen">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Profile
+          </button>
+        </div>
+      </header>
+
+      <main class="chat" id="chat" aria-live="polite">
+        <div class="msg msg--bot">
+          <p>Assalam‑o‑Alaikum! Mujhse apni fasal, keeda‑makoda, mandi rate, ya munafa ke baare mein poochein.</p>
+        </div>
+      </main>
+
+      <form class="composer" id="composer">
+        <input
+          id="messageInput"
+          type="text"
+          placeholder="Apna sawaal likhein…"
+          autocomplete="off"
+          aria-label="Sawaal likhein"
+        />
+        <button type="submit" aria-label="Bhejein">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+            <path d="M4 12L20 4L14 20L11 13L4 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <aside class="side side--right">
+      <div class="side__card">
+        <span class="side__card-label">Rabi Season Snapshot</span>
+        <ul class="side__crop-list">
+          <li><span>Gehun</span><em>Nov – Apr</em></li>
+          <li><span>Chana</span><em>Oct – Mar</em></li>
+          <li><span>Sarson</span><em>Sep – Feb</em></li>
+        </ul>
+      </div>
+      <div class="side__card side__card--accent">
+        <span class="side__card-label">Yaad rahe</span>
+        <p>Koi bhi spray karne se pehle label ka dosage zaroor check karein aur dastane pehnein.</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="profile-panel" id="profilePanel" aria-label="Farmer profile">
+    <div class="profile-panel__head">
+      <h2>Aapki Profile</h2>
+      <button type="button" id="profileClose" aria-label="Band karein">&times;</button>
+    </div>
+    <p class="profile-panel__hint">Ye maloomat yaad rakhi jayegi taake baar baar na poochni paray.</p>
+    <form id="profileForm">
+      <label>Naam
+        <input type="text" name="name" placeholder="Aapka naam" />
+      </label>
+      <label>District
+        <input type="text" name="district" placeholder="Jaise: Multan" />
+      </label>
+      <label>Province
+        <input type="text" name="province" placeholder="Jaise: Punjab" />
+      </label>
+      <label>Zameen (acres)
+        <input type="number" step="0.1" name="land_size_acres" placeholder="Jaise: 5" />
+      </label>
+      <label>Mojooda fasal
+        <input type="text" name="current_crop" placeholder="Jaise: Cotton" />
+      </label>
+      <button type="submit" class="profile-panel__save">Save karein</button>
+    </form>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
